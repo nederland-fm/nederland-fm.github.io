@@ -7937,12 +7937,12 @@
   {
     "slug": "ert-80s-athens",
     "stationuuid": "dd914a6b-70c5-4ff0-b89c-f07b28cdc2aa",
-    "name": "ERT 80s",
+    "name": "ERT Radio 80s",
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://radiostreaming.ert.gr/radio-80s",
     "homepage": "https://radiostreaming.ert.gr/radio-80s",
-    "favicon": "/station-icons/gr/ert-80s-athens.jpg",
+    "favicon": "/station-icons/gr/ert-80s-athens.webp",
     "genres": [
       "pop"
     ],
@@ -7958,17 +7958,20 @@
     "geo_long": null,
     "formats": [
       "80s"
-    ]
+    ],
+    "nowplaying_url": "https://www.ertecho.gr/wp-json/meta/v1/radio/92555",
+    "metadata_server": "ertecho",
+    "metadata_mode": "direct"
   },
   {
     "slug": "ert-90s-athens",
     "stationuuid": "88752004-5e0c-40a3-98c8-2fa90991e445",
-    "name": "ERT 90s",
+    "name": "ERT Radio 90s",
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://radiostreaming.ert.gr/radio-90s",
     "homepage": "https://www.ertecho.gr/radio/radio90s/",
-    "favicon": "/station-icons/gr/ert-90s-athens.jpg",
+    "favicon": "/station-icons/gr/ert-90s-athens.webp",
     "genres": [
       "pop"
     ],
@@ -7984,7 +7987,10 @@
     "geo_long": null,
     "formats": [
       "90s"
-    ]
+    ],
+    "nowplaying_url": "https://www.ertecho.gr/wp-json/meta/v1/radio/92556",
+    "metadata_server": "ertecho",
+    "metadata_mode": "direct"
   },
   {
     "slug": "ert-958fm",
@@ -8305,7 +8311,7 @@
     "city": "Athens",
     "stream_url": "https://radiostreaming.ert.gr/hits-radio",
     "homepage": "https://www.ertecho.gr/radio/nowhitsradio/",
-    "favicon": "/station-icons/gr/ert-now-hits-athens.jpg",
+    "favicon": "/station-icons/gr/ert-now-hits-athens.webp",
     "genres": [
       "pop"
     ],
@@ -8321,7 +8327,10 @@
     "geo_long": null,
     "formats": [
       "mainstream"
-    ]
+    ],
+    "nowplaying_url": "https://www.ertecho.gr/wp-json/meta/v1/radio/92536",
+    "metadata_server": "ertecho",
+    "metadata_mode": "direct"
   },
   {
     "slug": "ert-orestiada-108-0",
@@ -8450,7 +8459,7 @@
     "city": "Athens",
     "stream_url": "https://radiostreaming.ert.gr/vintage-radio",
     "homepage": "https://www.ertecho.gr/radio/vintageradio/",
-    "favicon": "/station-icons/gr/ert-vintage-athens.jpg",
+    "favicon": "/station-icons/gr/ert-vintage-athens.webp",
     "genres": [],
     "language": null,
     "bitrate": 256,
@@ -8464,7 +8473,10 @@
     "geo_long": null,
     "formats": [
       "oldies"
-    ]
+    ],
+    "nowplaying_url": "https://www.ertecho.gr/wp-json/meta/v1/radio/92554",
+    "metadata_server": "ertecho",
+    "metadata_mode": "direct"
   },
   {
     "slug": "ert-volos-100-7-101-2",
@@ -9767,8 +9779,8 @@
     "name": "Future Web Radio GR",
     "state": "Attica",
     "city": "Moschato",
-    "stream_url": "https://ams-pioneer02.dedicateware.com:1685/stream",
-    "homepage": "https://www.futurewebradio.gr/",
+    "stream_url": "https://ams-pioneer02.dedicateware.com:2900/stream",
+    "homepage": "http://www.futurewebradio.gr/",
     "favicon": "/station-icons/gr/future-web-radio-gr-moschato.ico",
     "genres": [],
     "language": "greek",
@@ -9780,9 +9792,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1685/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "geo_long": null
   },
   {
     "slug": "galaxias-fm-92-1-mhz",
@@ -13000,7 +13010,7 @@
   {
     "slug": "kosmos-jazz-gr-attiki",
     "stationuuid": "9c5b9610-805c-478f-ac5d-b6b561b78cab",
-    "name": "Kosmos Jazz GR",
+    "name": "Kosmos Jazz Radio",
     "state": "Attica",
     "city": "Agia Paraskevi",
     "stream_url": "https://radiostreaming.ert.gr/ert-webjazz",
@@ -13019,7 +13029,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 38.01373996014649,
-    "geo_long": 23.82556915283203
+    "geo_long": 23.82556915283203,
+    "nowplaying_url": "https://www.ertecho.gr/wp-json/meta/v1/radio/1007",
+    "metadata_server": "ertecho",
+    "metadata_mode": "direct"
   },
   {
     "slug": "koukla",
@@ -32639,7 +32652,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/https://live.sugarweb.gr/status-json.xsl?mount=%2F913.aac",
+    "nowplaying_url": "https://live.sugarweb.gr/status-json.xsl?mount=%2F913.aac",
     "metadata_server": "icecast",
     "metadata_mode":"direct",
     "formats": [
@@ -33002,7 +33015,7 @@
     "city": "Agia Paraskevi",
     "stream_url": "https://radiostreaming.ert.gr/ert-zeppelin",
     "homepage": "https://webradio.ert.gr/",
-    "favicon": "/station-icons/gr/zeppelin-106-7-athens.png",
+    "favicon": "/station-icons/gr/zeppelin-106-7-athens.webp",
     "genres": [
       "alternative rock",
       "classic rock",
@@ -36146,7 +36159,10 @@
     ],
     "alternate_stationuuids": [
       "9f45dd09-170a-4bdb-b0f4-f72c4871f1bd"
-    ]
+    ],
+    "nowplaying_url": "https://www.ertecho.gr/wp-json/meta/v1/radio/16358",
+    "metadata_server": "ertecho",
+    "metadata_mode": "direct"
   },
   {
     "slug": "athens-3e0ef068",
@@ -36539,10 +36555,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/https://www.gointernet.gr:9012/stats?sid=1&json=1",
+    "nowplaying_url": "https://www.gointernet.gr:9012/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode":"direct",
-    "history_url": "https://a.tunzilla.com/https://www.gointernet.gr:9012/played?sid=1&type=json",
+    "history_url": "https://www.gointernet.gr:9012/played?sid=1&type=json",
     "formats": [
       "greek-language music"
     ]

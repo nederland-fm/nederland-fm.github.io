@@ -58,7 +58,7 @@ In the destination repository, open **Settings → Secrets and variables → Act
 | `COUNTRY` | The lowercase country code matching `countries/<code>.json`, such as `hr` |
 | `SITE_URL` | The final origin, such as `https://<owner>.github.io` |
 
-Without `COUNTRY`, the workflow builds Greece. `SITE_URL` overrides the URL in the country configuration for deployment. Also update the configuration's `siteUrl` when you want local builds to use the final domain automatically.
+Without `COUNTRY`, the workflow selects the country from the repository name for the existing radio sites and defaults to Greece for other repositories. `SITE_URL` overrides the URL in the country configuration for deployment. Also update the configuration's `siteUrl` when you want local builds to use the final domain automatically.
 
 Under **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. The existing `.github/workflows/pages.yml` builds and deploys pushes to `main`.
 
@@ -745,7 +745,6 @@ preview. Run `npm run test:merge` for the tool's tests.
 Run it locally with `COUNTRY=nl SITE=nl-fm npm run dev`, or build with
 `COUNTRY=nl SITE=nl-fm npm run build`. Restart the development server after changing selectors.
 
-For deployment, set repository variables `COUNTRY=nl` and `SITE=nl-fm`.
-The `radio-nederland.github.io` repository selects these defaults automatically.
+The `radio-nederland.github.io` repository selects `COUNTRY=nl` and `SITE=nl-fm` automatically. For deployment from another repository, set both variables explicitly.
 `SITE_URL`, when set, overrides only the origin; the selected configuration
 supplies the navbar name, page-title branding and other site settings.

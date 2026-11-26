@@ -232,7 +232,7 @@ Before the first push, configure the destination repository:
 - **Settings → Secrets and variables → Actions → Variables:** add `COUNTRY` = `si` and `SITE_URL` = `https://radio-slovenija.github.io` as repository variables.
 - **Settings → Pages → Build and deployment:** choose **GitHub Actions**.
 
-The existing `.github/workflows/pages.yml` deploys pushes to `main`. Without the `COUNTRY` variable it builds Greece.
+The existing `.github/workflows/pages.yml` deploys pushes to `main`. It selects the site automatically for the existing radio repositories. Set `COUNTRY` for a new repository, which otherwise defaults to Greece.
 
 ```sh
 git remote -v

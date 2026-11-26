@@ -17,10 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      COUNTRY: ${{ vars.COUNTRY || (github.event.repository.name == 'radio-nederland.github.io' && 'nl') || 'gr' }}
-      SITE: ${{ vars.SITE || (github.event.repository.name == 'radio-nederland.github.io' && 'nl-fm') || '' }}
-      SITE_URL: ${{ vars.SITE_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -35,7 +31,29 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        shell: bash
+        env:
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+          COUNTRY: ${{ vars.COUNTRY }}
+          SITE: ${{ vars.SITE }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          shopt -s nocasematch
+          default_site=
+          case "$REPOSITORY_NAME" in
+            radio-hrvatska.github.io) default_country=hr ;;
+            sveriges-radio.github.io) default_country=se ;;
+            nederland-fm.github.io) default_country=nl ;;
+            radio-nederland.github.io) default_country=nl; default_site=nl-fm ;;
+            radio-internetowe.github.io) default_country=pl ;;
+            *) default_country=gr ;;
+          esac
+
+          export COUNTRY="${COUNTRY:-$default_country}"
+          if [[ "$COUNTRY" == "$default_country" ]]; then
+            export SITE="${SITE:-$default_site}"
+          fi
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

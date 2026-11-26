@@ -856,7 +856,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://r.jina.ai/http://radio1.gr/wp-content/uploads/zeta/latestFeed.json",
+    "nowplaying_url": "https://r.jina.ai/https://radio1.gr/wp-content/uploads/zeta/latestFeed.json",
     "metadata_server": "radio1",
     "history_url": "https://r.jina.ai/http://radio1.gr/wp-content/uploads/zeta/songHistory.json",
     "formats": [
@@ -2907,7 +2907,7 @@
     "name": "Asteras 92",
     "state": "North Aegean",
     "city": "Andros",
-    "stream_url": "https://cast4.magicstreams.gr:12108/;?_=0.14756551841750443",
+    "stream_url": "https://cast4.magicstreams.gr:12108/;",
     "homepage": "https://asterasradio.com/",
     "favicon": "/station-icons/gr/asteras-92-andros.webp",
     "genres": [],
@@ -3895,8 +3895,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://radio.lancom.gr:8004/status-json.xsl?mount=%2Fstream3",
-    "metadata_server": "icecast",
     "aliases": [
       "ble-93-3-kozani-48d768e9"
     ],
@@ -3909,11 +3907,8 @@
         "label": "Alternative",
         "url": "http://radio.lancom.gr:8006/stream3",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0,
-        "lastcheckok": 1,
-        "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream3",
-        "metadata_server": "icecast"
+        "codec": "MP3"
+
       }
     ]
   },
@@ -6428,7 +6423,7 @@
     "name": "Diva 91.6",
     "state": "Western Macedonia",
     "city": "Kozani",
-    "stream_url": "https://tls-chrome.live24.gr/996?http://176.31.120.166:6404/stream",
+    "stream_url": "https://s17.myradiostream.com:6404/;",
     "homepage": "https://divaradio.gr/",
     "favicon": "/station-icons/gr/diva-91-6-kozani.webp",
     "genres": [
@@ -6446,10 +6441,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://176.31.120.166:6404/stats?sid=1&json=1",
+    "nowplaying_url": "https://r.jina.ai/https://scraper2.onlineradiobox.com/gr.diva916",
     "metadata_server": "shoutcast",
     "metadata_mode":"direct",
-    "history_url": "https://a.tunzilla.com/http://176.31.120.166:6404/played?sid=1&type=json",
     "aliases": [
       "diva-fm"
     ],
@@ -6460,7 +6454,7 @@
       {
         "id": "alternative-1",
         "label": "Alternative",
-        "url": "http://176.31.120.166:6404/;",
+        "url": "http://s17.myradiostream.com:6404/;",
         "bitrate": 128,
         "codec": "MP3"
       }
@@ -13209,7 +13203,7 @@
     "city": "Athens",
     "stream_url": "https://cast.magicstreams.gr:9010/stream",
     "homepage": "https://www.lafamiglia.com.gr/",
-    "favicon": "/station-icons/gr/la-famiglia-athens-placeholder.webp",
+    "favicon": "/station-icons/gr/la-famiglia-athens.webp",
     "genres": [
       "greek pop"
     ],
@@ -13223,10 +13217,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/https://cast.magicstreams.gr:9010/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "metadata_mode":"direct",
-    "history_url": "https://a.tunzilla.com/https://cast.magicstreams.gr:9010/played?sid=1&type=json",
     "formats": [
       "mainstream"
     ]
@@ -14157,7 +14147,7 @@
     "state": "Central Macedonia",
     "city": "Thessaloniki",
     "stream_url": "https://radio.1055rock.gr:32669/live",
-    "homepage": "https://www.love1065.gr/",
+    "homepage": "https://www.lovefm.gr/",
     "favicon": "/station-icons/gr/love-106-5-thessaloniki.webp",
     "genres": [],
     "language": "greek",
@@ -14170,10 +14160,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://server.insms.gr:45104/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "metadata_mode":"direct",
-    "history_url": "https://a.tunzilla.com/http://server.insms.gr:45104/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "mainstream"
@@ -14620,10 +14606,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://comet.shoutca.st:8366/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "metadata_mode": "direct",
-    "history_url": "https://a.tunzilla.com/http://comet.shoutca.st:8366/played?sid=1&type=json",
     "formats": [
       "variety"
     ],
@@ -15591,8 +15573,8 @@
     "state": "Crete",
     "city": "Heraklion",
     "stream_url": "https://stream.crete.ovh:8443/metro",
-    "homepage": "https://www.metroradio.gr/",
-    "favicon": "/station-icons/gr/metro-radio-heraclion.png",
+    "homepage": "https://metroradio.gr/",
+    "favicon": "/station-icons/gr/metro-radio-heraclion.webp",
     "genres": [
       "pop"
     ],
@@ -19069,9 +19051,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://live.planetlakonias.gr/stats?sid=1&json=1",
-    "metadata_server": "planetlakonias",
-    "history_url": "https://live.planetlakonias.gr/played.html?sid=1",
     "formats": [
       "greek-language music"
     ],
@@ -28247,7 +28226,7 @@
     "name": "Setta",
     "state": null,
     "city": null,
-    "stream_url": "https://cast.magicstreams.gr:9028/live",
+    "stream_url": "https://cast.magicstreams.gr/ic/setta/stream",
     "homepage": "https://radiosetta5.blogspot.com/",
     "favicon": "/station-icons/gr/setta.jpg",
     "genres": [
@@ -28263,8 +28242,15 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://cast.magicstreams.gr:9028/status-json.xsl?mount=%2Flive",
-    "metadata_server": "icecast"
+    "streams": [
+          {
+            "id": "mp3-128",
+            "label": "Alternative",
+            "url": "https://cast.magicstreams.gr:9028/live",
+            "bitrate": 128,
+            "codec": "MP3"
+          }
+        ]
   },
   {
     "slug": "seven-news-94-4-kavala",
@@ -33452,10 +33438,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://s1.onweb.gr:8066/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "metadata_mode":"direct",
-    "history_url": "https://a.tunzilla.com/http://s1.onweb.gr:8066/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "mainstream"
@@ -39907,8 +39889,10 @@
     "city": "Komotini",
     "stream_url": "https://s6.onweb.gr:8020/stream",
     "homepage": "https://www.radioparatiritis.gr/",
-    "favicon": "/station-icons/gr/94-komotini.png",
-    "genres": [],
+    "favicon": "/station-icons/gr/94-komotini.webp",
+    "genres": [
+      "country"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -39919,10 +39903,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://s6.onweb.gr:8020/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "metadata_mode":"direct",
-    "history_url": "https://a.tunzilla.com/http://s6.onweb.gr:8020/played?sid=1&type=json",
     "formats": [
       "talk"
     ]
@@ -40199,7 +40179,7 @@
   {
     "slug": "106-arta",
     "stationuuid": "8fcbe351-07d6-4375-943f-bc38702dc0a3",
-    "name": "Πήγασος 106",
+    "name": "Πήγασος 106 FM",
     "state": "Epirus",
     "city": "Arta",
     "stream_url": "https://rdst.win:59412/",
@@ -40217,9 +40197,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://rdst.win:59412/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "geo_long": null
   },
   {
     "slug": "93-4-volos",
@@ -44120,6 +44098,7 @@
     "stationuuid": "f7468b1b-ed11-428b-bb52-25878c9cc66f",
     "name": "Ble 93",
     "state": "Eastern Macedonia and Thrace",
+    "city": "Drama",
     "stream_url": "https://ice.greekstream.net/diavlos93",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/gr/ble-93-drama.webp",
@@ -44135,10 +44114,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null,
-    "city": "Drama",
-    "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fdiavlos93",
-    "metadata_server": "icecast"
+    "geo_long": null
   },
   {
     "slug": "burradio",
@@ -45081,7 +45057,8 @@
     "stationuuid": "567d2dc8-56d4-41b2-9d98-f767816179fe",
     "name": "Greca Lounge",
     "state": "Western Greece",
-    "stream_url": "https://one.cloudstreaming.eu/proxy/lounge/stream",
+    "city": "Pyrgos",
+    "stream_url": "https://one.cloudstreaming.eu/proxy/loungenew/stream",
     "homepage": "https://greca994.gr/",
     "favicon": "/station-icons/gr/greca-lounge-pyrgos.webp",
     "genres": [],
@@ -45095,17 +45072,19 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Pyrgos",
     "formats": [
       "lounge"
-    ]
+    ],
+    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/loungenew/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "greca-party-pyrgos",
     "stationuuid": "f29654c8-dff4-4147-ba7b-660fe86e7b07",
     "name": "Greca Party",
     "state": "Western Greece",
-    "stream_url": "https://one.cloudstreaming.eu/proxy/party/stream",
+    "city": "Pyrgos",
+    "stream_url": "https://one.cloudstreaming.eu/proxy/partynew/stream",
     "homepage": "https://greca994.gr/",
     "favicon": "/station-icons/gr/greca-party-pyrgos.webp",
     "genres": [],
@@ -45119,8 +45098,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Pyrgos",
-    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/party/streaminfo.get",
+    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/partynew/streaminfo.get",
     "metadata_server": "centovacast",
     "formats": [
       "party",
@@ -45132,7 +45110,8 @@
     "stationuuid": "fccbac90-bf7a-42a0-8caf-2bce3ed483af",
     "name": "Greca Γλέντι",
     "state": "Western Greece",
-    "stream_url": "https://one.cloudstreaming.eu/proxy/glenti/stream",
+    "city": "Pyrgos",
+    "stream_url": "https://one.cloudstreaming.eu/proxy/glentinew/stream",
     "homepage": "https://greca994.gr/",
     "favicon": "/station-icons/gr/greca-pyrgos.webp",
     "genres": [
@@ -45148,14 +45127,15 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Pyrgos"
+    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/glentinew/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "greca-pyrgos-c4ba72f1",
     "stationuuid": "c4ba72f1-5a1d-4e2a-afb7-c3f3fa3ef4dc",
     "name": "Greca Έντεχνο",
     "state": "Western Greece",
-    "stream_url": "https://one.cloudstreaming.eu/proxy/entexno/stream",
+    "stream_url": "https://one.cloudstreaming.eu/proxy/entexnonew/stream",
     "homepage": "https://greca994.gr/",
     "favicon": "/station-icons/gr/greca-pyrgos.webp",
     "genres": [],
@@ -45172,14 +45152,16 @@
     "city": "Pyrgos",
     "formats": [
       "greek-language music"
-    ]
+    ],
+    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/entexnonew/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "greca-pyrgos-364bedcb",
     "stationuuid": "364bedcb-4478-413b-ab22-2418936a9355",
     "name": "Greca Ερωτικό",
     "state": "Western Greece",
-    "stream_url": "https://one.cloudstreaming.eu/proxy/erwtiko/stream",
+    "stream_url": "https://one.cloudstreaming.eu/proxy/erwtikonew/stream",
     "homepage": "https://greca994.gr/",
     "favicon": "/station-icons/gr/greca-pyrgos.webp",
     "genres": [],
@@ -45196,14 +45178,17 @@
     "city": "Pyrgos",
     "formats": [
       "love songs"
-    ]
+    ],
+    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/erwtikonew/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "greca-pyrgos-fe9aa97d",
     "stationuuid": "fe9aa97d-fa10-412f-ba56-312c695a2bc3",
     "name": "Greca Λαϊκό",
     "state": "Western Greece",
-    "stream_url": "https://one.cloudstreaming.eu/proxy/laiko/stream",
+    "city": "Pyrgos",
+    "stream_url": "https://one.cloudstreaming.eu/proxy/laikonew/stream",
     "homepage": "https://greca994.gr/",
     "favicon": "/station-icons/gr/greca-pyrgos.webp",
     "genres": [
@@ -45219,7 +45204,8 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Pyrgos"
+    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/laikonew/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "greek-gold-classic-radio",
@@ -46531,9 +46517,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://rebetis.duckdns.org:8545/status-json.xsl?mount=%2Flive",
-    "metadata_server": "icecast"
+    "geo_long": null
   },
   {
     "slug": "radio-rebetis-agrinio",

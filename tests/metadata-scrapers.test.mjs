@@ -587,6 +587,18 @@ test('CentovaCast repairs Windows-1253 Greek metadata represented as Latin-1', (
  assert.equal(parseHistory('centovacast',JSON.stringify(history)).song_history[0].song.title,'Θρήνος');
  assert.equal(parseMetadata('centovacast',{type:'result',data:[{track:{title:'Beyoncé'}}]},context).song.title,'Beyoncé');
 });
+test('Greca Έντεχνο decodes the artist and title from its CentovaCast response', () => {
+ const artist = 'ÄÇÌÇÔÑÇÓ ÐÁÍÁÃÏÐÏÕËÏÓ';
+ const title = 'ÁÕÑÁ';
+ const response = JSON.stringify({
+  type: 'result',
+  data: [{ song: `${artist} - ${title}`, track: { artist, title } }],
+ });
+ const result = parseMetadata('centovacast', decodeProviderMetadata('centovacast', response), context);
+ assert.equal(result.song.artist, 'ΔΗΜΗΤΡΗΣ ΠΑΝΑΓΟΠΟΥΛΟΣ');
+ assert.equal(result.song.title, 'ΑΥΡΑ');
+ assert.equal(result.text, 'ΔΗΜΗΤΡΗΣ ΠΑΝΑΓΟΠΟΥΛΟΣ - ΑΥΡΑ');
+});
 test('Radio Ta Asteria keeps readable Greek metadata and skips characters lost at source', () => {
  const current = {type:'result',data:[{song:'ΓΙΩΡΓΟΣ - ΤΡΑΓΟΥΔΙ',track:{artist:'ΓΙΩΡΓΟΣ',title:'ΤΡΑΓΟΥΔΙ'}}]};
  assert.equal(parseMetadata('radioasteria',current,context).song.title,'ΤΡΑΓΟΥΔΙ');

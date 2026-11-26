@@ -34,9 +34,10 @@ jobs:
         shell: bash
         env:
           REPOSITORY_NAME: ${{ github.event.repository.name }}
-          COUNTRY: ${{ vars.COUNTRY }}
-          SITE: ${{ vars.SITE }}
-          SITE_URL: ${{ vars.SITE_URL }}
+          # These overrides are optional and vary by repository.
+          COUNTRY: ${{ fromJSON(toJSON(vars)).COUNTRY }}
+          SITE: ${{ fromJSON(toJSON(vars)).SITE }}
+          SITE_URL: ${{ fromJSON(toJSON(vars)).SITE_URL }}
         run: |
           shopt -s nocasematch
           default_site=
